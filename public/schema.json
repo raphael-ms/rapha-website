@@ -1,0 +1,30 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Raphael Marques",
+  "jobTitle": "Senior Frontend Engineer & Application Architect",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Mercedes-Benz.io"
+  },
+  "url": "https://raphaelmarques.dev",
+  "sameAs": [
+    "https://www.linkedin.com/in/raphaelmarques77/"
+  ],
+  "knowsAbout": ["Frontend Development", "Application Architecture", "React", "Vue.js", "TypeScript", "System Design"],
+  "alumniOf": [
+    {
+      "@type": "EducationalOrganization",
+      "name": "UFRJ - Universidade Federal do Rio de Janeiro"
+    },
+    {
+      "@type": "EducationalOrganization",
+      "name": "Faculdade Católica Salesiana"
+    }
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lisbon",
+    "addressCountry": "PT"
+  }
+}
