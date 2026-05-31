@@ -1,0 +1,110 @@
+.companies {
+  padding: 80px 0 60px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.companies-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+/* Ticker wrapper */
+.companies-ticker-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.companies-ticker {
+  overflow: hidden;
+  width: 100%;
+}
+
+.companies-ticker-track {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  width: max-content;
+  animation: ticker-scroll 30s linear infinite;
+}
+
+.companies-ticker-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes ticker-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Individual logo item */
+.company-ticker-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 12px 20px;
+  transition: all var(--transition-base);
+  opacity: 0.5;
+}
+
+.company-ticker-item:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.company-ticker-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-secondary);
+  transition: color var(--transition-fast);
+}
+
+.company-ticker-item:hover .company-ticker-logo {
+  color: var(--color-text);
+}
+
+/* Fade edges */
+.companies-ticker-fade {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 120px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.companies-ticker-fade-left {
+  left: 0;
+  background: linear-gradient(to right, var(--color-bg), transparent);
+}
+
+.companies-ticker-fade-right {
+  right: 0;
+  background: linear-gradient(to left, var(--color-bg), transparent);
+}
+
+@media (max-width: 768px) {
+  .companies {
+    padding: 60px 0 40px;
+  }
+
+  .companies-ticker-track {
+    gap: 40px;
+    animation-duration: 20s;
+  }
+
+  .companies-ticker-fade {
+    width: 60px;
+  }
+}

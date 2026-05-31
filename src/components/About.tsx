@@ -3,10 +3,10 @@ import { useInView } from '../hooks/useInView';
 import './About.css';
 
 const highlights = [
-  { number: '10+', label: 'Years of Experience' },
-  { number: '500k+', label: 'Monthly Users Served' },
-  { number: '30+', label: 'Countries Reached' },
-  { number: '80%+', label: 'Test Coverage Maintained' },
+  { number: '6+', label: 'Years of Experience' },
+  { number: '1M+', label: 'Monthly Users Served' },
+  { number: '40+', label: 'Countries Reached' },
+  { number: '15+', label: 'Engineers Led & Mentored' },
 ];
 
 export default function About() {
@@ -38,21 +38,21 @@ export default function About() {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <p>
-            I'm a Senior Frontend Engineer, Application Architect and Computer
-            Engineer with an MBA in Software Engineering. What motivates me most
-            is bridging the gap between business and technology — translating
+            I'm an Senior Software Engineer and Application Architect with an MBA in Software Engineering. What motivates me most
+            is bridging the gap between business and technology. Translating
             complex ideas into clear, practical solutions.
           </p>
           <p>
             Currently at <strong>Mercedes-Benz.io</strong> in Lisbon, where I
             architect solutions for their Search Result Page serving users across
             30+ countries. I've also designed and led the development of their
-            Generative AI Chat, now used across the entire website.
+            Generative AI Chat, and other key features.
           </p>
           <p>
-            Before tech, I received an Honourable Mention at the Brazilian
-            Mathematics Olympiad (CNPq) — an experience that shaped my analytical
-            thinking and love for solving complex challenges.
+            I also write about frontend engineering and architecture on{' '}
+            <a href="https://medium.com/@raphaelmarques77" target="_blank" rel="noopener noreferrer">Medium</a>{' '}
+            and share insights on{' '}
+            <a href="https://www.linkedin.com/in/raphaelmarques77/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
           </p>
         </motion.div>
         <motion.div

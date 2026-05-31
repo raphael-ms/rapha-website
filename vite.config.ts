@@ -5,7 +5,8 @@ export default defineConfig({
   plugins: [react()],
   build: {
     target: 'es2020',
-    cssMinify: true,
+    minify: 'oxc',
+    cssMinify: 'lightningcss',
     rollupOptions: {
       output: {
         manualChunks(id) {
